@@ -1,10 +1,9 @@
-name: Production
-
+name: Basic Workflow Dispatch Example
 on:
   workflow_dispatch:
-
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest
-    step:
-     - run : echo "We here!!!!!"
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
