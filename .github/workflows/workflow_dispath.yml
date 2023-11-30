@@ -1,5 +1,10 @@
 name: Basic Workflow Dispatch Example
 on:
+  push:
+    branches:
+      - master
+    paths:
+      - 'version.txt'
   workflow_dispatch:
     inputs:
       version:
