@@ -1,15 +1,6 @@
 name: Basic Workflow Dispatch Example
 on:
   workflow_dispatch:
-    inputs:
-      version:
-        description: 'The version to announce'
-        type: string
-        required: true
-      description:
-        description: 'A short description of the version to announce'
-        type: string
-        required: true
 jobs:
   deploy:
     runs-on: self-hosted
