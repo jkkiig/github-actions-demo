@@ -1,5 +1,6 @@
 name: Basic Workflow Dispatch Example
 on:
+   status:
    pull_request:
     branches:
       - master
