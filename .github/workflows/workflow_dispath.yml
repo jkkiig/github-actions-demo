@@ -1,6 +1,16 @@
 name: Basic Workflow Dispatch Example
 on:
-  workflow_dispatch:
+   workflow_dispatch:
+    inputs:
+      name:
+        description: 'Test workflow_dispatch'
+        required: true
+        default: 'dispatch'
+      home:
+        description: 'location'
+        required: false
+        default: 'The Octoverse'
+   
 jobs:
   deploy:
     runs-on: self-hosted
