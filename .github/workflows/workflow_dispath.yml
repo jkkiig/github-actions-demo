@@ -16,6 +16,8 @@ on:
         default: 'The Octoverse'
    
 jobs:
+  if_merged:
+    if: github.event.pull_request.merged == true
   deploy:
     runs-on: self-hosted
     steps:
