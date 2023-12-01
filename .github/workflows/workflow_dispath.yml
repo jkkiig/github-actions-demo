@@ -1,5 +1,9 @@
 name: Basic Workflow Dispatch Example
 on:
+   pull_request:
+    branches:
+      - master
+    types: [closed]
    workflow_dispatch:
     inputs:
       name:
